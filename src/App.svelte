@@ -14,7 +14,7 @@ import Avatar from "./Avatar.svelte"
 <pre><code>{'<Footer/>'}</code></pre>
 </section>
 
-<h2 class="h2-badge">Badge component</h2>
+<h2 class="h2-badge">Badge components</h2>
 <section class="badge" >
 <div class="div-badge">
 <h3>Neutral badge</h3>
@@ -48,7 +48,7 @@ import Avatar from "./Avatar.svelte"
 	
 </section>
 
-<h2 class="h2-button">Button component</h2>
+<h2 class="h2-button">Button components</h2>
 <section class="button" >
 <div class="div-button">
 <h3>Button</h3>
