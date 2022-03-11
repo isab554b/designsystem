@@ -10,8 +10,6 @@
 p {
 padding-left:  0.6rem;
 padding-right:  0.6rem;
-padding-top:  0.2rem;
-padding-bottom:  0.2rem;
 width: fit-content;
 border-radius: 12px;
 color: var(--primary-font-color);

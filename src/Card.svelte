@@ -1,24 +1,33 @@
 <script>
 import Button from "./Button.svelte";
 import Badge from "./Badge.svelte"
+
+  export let img;
+  export let title;
+  export let description;
+export let buttontext;
+    export let category1;
+    export let category2;
+  export let badgetext;
+
 </script>
 
 
 <div class="card-component">
-<img src="/shoes.jpg" alt="sko">
+<img src="{img}" alt="billede">
 <div class="h3-badge">
- <h3>Shoes!</h3>
- <Badge type="secondary">NEW</Badge>
+ <h3>{title}</h3>
+ <Badge type="secondary">{badgetext}</Badge>
  </div>
  <div class="description">
- <p>If a dog chews shoes whose shoes does he choose?</p>
+ <p>{description}</p>
  </div>
  <div class="category-container">
- <p class="category">Fashion</p>
- <p class="category">Products</p>
+ <p class="category">{category1}</p>
+ <p class="category">{category2}</p>
  </div>
  <div class="buy-now">
- <Button type="primary" >BUY NOW</Button>
+ <Button type="primary" >{buttontext}</Button>
  </div>
 </div>
 

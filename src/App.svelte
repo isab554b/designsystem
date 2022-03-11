@@ -8,9 +8,11 @@ import Avatar from "./Avatar.svelte"
 </script>
 
 <main>
-<h2>Footer component</h2>
-
+<h2 class="h2-footer">Footer component</h2>
+<section class="footer">
 <Footer/>
+<pre><code>{'<Footer/>'}</code></pre>
+</section>
 
 <h2 class="h2-badge">Badge component</h2>
 <section class="badge" >
@@ -86,15 +88,18 @@ import Avatar from "./Avatar.svelte"
 </div>
 </section>
 
-<h2>Card component</h2>
-<section>
-<Card/>
+<h2 class="h2-card">Card component</h2>
+<section class="card">
+<Card img="./shoes.jpg" title="Shoes!" badgetext="NEW" description="If a dog chews shoes whose shoes does he choose?" category1="Fashion" category2="Products" buttontext="BUY NOW" ></Card>
+
+<pre><code>{'<Card img="./shoes.jpg" title="Shoes!" badgetext="NEW" description="If a dog chews shoes whose shoes does he choose?" category1="Fashion" category2="Products" buttontext="BUY NOW"></Card>'}</code></pre>
+
 </section>
 
-<h2>Button w Badge component</h2>
-<section>
-
-<ButtonBadge number="99+" ></ButtonBadge>	
+<h2 class="h2-buttonbadge">Button w Badge component</h2>
+<section class="button-badge">
+<ButtonBadge buttonbadgetext="INBOX" number="99+" ></ButtonBadge>
+<pre><code>{'<ButtonBadge buttonbadgetext="INBOX" number="99+" ></ButtonBadge>'}</code></pre>	
 </section>
 
 <h2 class="h2-avatar">Avatar w indicator</h2>
@@ -158,6 +163,12 @@ section {
 	margin-bottom: 4rem;
 }
 
+.h2-footer {
+	padding-left: 2rem;	
+}
+.h2-buttonbadge {
+padding-left: 2rem;	
+}
 .h2-badge {
 	padding-left: 2rem;
 }
@@ -168,12 +179,29 @@ section {
 	padding-left: 2rem;
 }
 
+.h2-card {
+	padding-left: 2rem;
+}
+
 
 .badge {
 	display: grid;
 	    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
 		padding: 0 2rem 0 2rem;
 		gap: 4rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 0 2rem 0 2rem;
+	
+}
+
+
+
+.button-badge {
+	padding: 0 2rem 0 2rem;
 }
 
 .button {
@@ -197,11 +225,15 @@ font-size: 1rem;
 
 .avatar {
 	display: grid;
-	grid-template-columns: repeat( auto-fit, minmax(50px, 1fr) );
+	grid-template-columns: repeat( auto-fit, minmax(200px, 1fr) );
 	padding: 0 2rem 0 2rem;
 	gap: 4rem;
 	font-family: var(--font-family);
 	
+}
+
+.footer {
+	padding: 0 2rem 0 2rem;
 }
 
 

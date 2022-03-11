@@ -15,6 +15,7 @@ export let text;
 p {
 
 	color: var(--primary-font-color);
+
 }
 
 
@@ -23,13 +24,21 @@ p {
     height: 75px;
     background-color: var(--default-color);
     border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: 1.4rem;
 }
+
 
 .lg {
     width: 55px;
     height: 55px;
     background-color: var(--default-color);
     border-radius: 50%; 
+     display: flex;
+    justify-content: center;
+     align-self: center;
 }
 
 .md {
@@ -37,13 +46,21 @@ p {
     height: 40px;
     background-color: var(--default-color);
     border-radius: 50%; 
+     display: flex;
+    justify-content: center;
+     align-self: center;
+     font-size: 0.75rem;
 }
 
 .sm {
     width: 30px;
     height: 30px;
     background-color: var(--default-color);
-    border-radius: 50%; 
+    border-radius: 50%;
+     display: flex;
+    justify-content: center; 
+     align-self: center;
+     font-size: 0.55rem;
 }
 
 .text {

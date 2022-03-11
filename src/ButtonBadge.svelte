@@ -3,6 +3,7 @@ import Button from "./Button.svelte";
 import Badge from "./Badge.svelte"
 
   export let number;
+  export let buttonbadgetext;
 </script>
 
 <div class="container">
@@ -12,7 +13,7 @@ import Badge from "./Badge.svelte"
     </Badge>
     </div>
       <div class="button">
-    <Button>INBOX</Button>
+    <Button>{buttonbadgetext}</Button>
 </div>
 </div>
 
@@ -20,14 +21,22 @@ import Badge from "./Badge.svelte"
 <style>
 
 .container {
+
     position: relative;
 }
   
   .badge {
     position:absolute;
     z-index: 1;
-    top: 0;
+    left: 50px;
+    bottom: 24px;
   
      
+  }
+
+  p {
+font-size: 0.8rem;
+
+
   }
 </style>
