@@ -1,0 +1,16 @@
+:root {
+  --default-color: #3e4550;
+  --primary-color: #4d2aef;
+  --primary-font-color: white;
+  --secondary-color: #f101b9;
+  --accent-color: #67cbbe;
+  --ghost-font-color: black;
+  --ghost-color: none;
+  --link-font-color: #4d2aef;
+  --link-color: none;
+  --font-family: "Open Sans", sans-serif;
+}
+
+html {
+  background-color: #e5e5e5;
+}
